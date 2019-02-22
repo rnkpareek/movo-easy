@@ -1,0 +1,7 @@
+.card-div{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 72px;
+    margin-left: 71px;
+}
