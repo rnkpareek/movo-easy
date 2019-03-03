@@ -8,8 +8,12 @@ import { Routes } from '@angular/router';
 
 export const appRoute: Routes = [
   {
-    path: 'movoeasy',
-    loadChildren: 'src/app/user/home/home.module#HomeModule'
+    path: '',
+    loadChildren: 'src/app/home/home.module#HomeModule'
+  },
+  {
+    path: 'dashboard',
+    loadChildren: 'src/app/dashboard/dashboard.module#DashboardModule'
   },
   {
     path: '',

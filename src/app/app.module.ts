@@ -11,9 +11,10 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 // extra
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment.prod';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
