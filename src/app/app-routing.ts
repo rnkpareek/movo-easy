@@ -20,28 +20,4 @@ export const appRoute: Routes = [
     redirectTo: '/movoeasy',
     pathMatch: 'full'
   },
-  // {
-  //   path: 'app',
-  //   component: DashboardComponent,
-  //   canActivate:[AuthGuard],
-
-  //   children: [
-  //     {
-  //       path: 'admin',
-  //       loadChildren: 'src/app/admin/admin.module#AdminModule'
-  //     },
-  //     {
-  //       path: 'reviewer',
-  //       loadChildren: 'src/app/user/user.module#UserModule'
-  //     },
-  //      {
-  //       path: 'researcher',
-  //       loadChildren: 'src/app/researcher/researcher.module#ResearcherModule'
-  //     },
-  //     {
-  //       path:'summary',
-  //       loadChildren:'src/app/summary/summary.module#SummaryModule'
-  //     }
-  //   ]
-  // }
 ];
