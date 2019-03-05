@@ -15,6 +15,8 @@ import { TabsModule } from 'ngx-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { PlanComponent } from './plan/plan.component';
 import { VendorsComponent } from './vendors/vendors.component';
+import {FooterComponent} from './footer/footer.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -28,6 +30,7 @@ import { VendorsComponent } from './vendors/vendors.component';
     HeaderComponent,
     AboutComponent,
     PlanComponent,
+    FooterComponent,
     VendorsComponent]
 })
 export class HomeModule { }

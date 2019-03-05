@@ -8,18 +8,41 @@ import {HomeComponent} from './home.component';
 export const mainRoute: Routes = [
     {
         path: '',
-        component: MainComponent
-      },
-      {
+        component: HomeComponent,
+        children:[
+        
+        { path: '', 
+        redirectTo: 'home', 
+        pathMatch: 'full' },
+         
+        {
         path: 'about',
         component: AboutComponent
-      },
-      {
-        path: 'vendors',
-        component: PlanComponent
-      },
-      {
-        path: 'vendorsplan',
-        component: VendorsComponent
-      }
+        },
+        {path:'home',
+        component:MainComponent},
+
+        {
+          path: 'vendors',
+          component: PlanComponent
+        },
+        {
+          path: 'vendorsplan',
+          component: VendorsComponent
+        }
+          ]
+        }
+      // ,
+      // {
+      //   path: 'about',
+      //   component: AboutComponent
+      // },
+      // {
+      //   path: 'vendors',
+      //   component: PlanComponent
+      // },
+      // {
+      //   path: 'vendorsplan',
+      //   component: VendorsComponent
+      // }
 ];
