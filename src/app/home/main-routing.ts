@@ -25,11 +25,11 @@ export const mainRoute: Routes = [
 
         {
           path: 'vendors',
-          component: PlanComponent
+          component: VendorsComponent
         },
         {
           path: 'vendorsplan',
-          component: VendorsComponent
+          component: PlanComponent
         },
         {
           path: 'login',
