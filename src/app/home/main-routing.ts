@@ -4,7 +4,8 @@ import { AboutComponent } from './about/about.component';
 import { PlanComponent } from './plan/plan.component';
 import { VendorsComponent } from './vendors/vendors.component';
 import {HomeComponent} from './home.component';
-
+import {DashboardComponent} from '../dashboard/dashboard.component';
+import {LoginComponent} from './login/login.component';
 export const mainRoute: Routes = [
     {
         path: '',
@@ -29,9 +30,14 @@ export const mainRoute: Routes = [
         {
           path: 'vendorsplan',
           component: VendorsComponent
+        },
+        {
+          path: 'login',
+          component: LoginComponent
         }
           ]
-        }
+        },
+       
       // ,
       // {
       //   path: 'about',

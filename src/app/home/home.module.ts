@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { PlanComponent } from './plan/plan.component';
 import { VendorsComponent } from './vendors/vendors.component';
 import {FooterComponent} from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import {FooterComponent} from './footer/footer.component';
     AboutComponent,
     PlanComponent,
     FooterComponent,
-    VendorsComponent]
+    VendorsComponent,
+    LoginComponent]
 })
 export class HomeModule { }
