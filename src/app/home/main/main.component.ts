@@ -15,13 +15,13 @@ export class MainComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder,public dialog: MatDialog) {
    }
 
-    openDialog() {
-    this.dialog.open(DialogDataExampleDialog, {
-      data: {
-        animal: 'panda'
-      }
-    });
-  }
+  //   openDialog() {
+  //   this.dialog.open(DialogDataExampleDialog, {
+  //     data: {
+  //       animal: 'panda'
+  //     }
+  //   });
+  // }
 
   ngOnInit() {
   	 this.firstFormGroup = this._formBuilder.group({
@@ -35,10 +35,10 @@ export class MainComponent implements OnInit {
 
 }
 
-@Component({
-  selector: 'dialog-data-example-dialog',
-  templateUrl: 'dialog-data-example-dialog.html',
-})
-export class DialogDataExampleDialog {
-  constructor() {}
-}
+// @Component({
+//   selector: 'dialog-data-example-dialog',
+//   templateUrl: 'dialog-data-example-dialog.html',
+// })
+// export class DialogDataExampleDialog {
+//   constructor() {}
+// }

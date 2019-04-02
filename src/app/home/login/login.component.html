@@ -17,9 +17,9 @@
               <form (submit)="login()">
                   <div class="title">Login to your account</div>
                   <mat-card-content class="input-box-wrapper" fxLayout="column">
-                    <mat-error *ngIf="showError">
+                   <!--  <mat-error *ngIf="showError">
                       Invalid Email/Password
-                    </mat-error>
+                    </mat-error> -->
                     <mat-form-field class="input-box">
                       <input matInput placeholder="Email" name="email" [(ngModel)] = "loginCredentials.email">
                     </mat-form-field>
@@ -27,9 +27,9 @@
                       <input type="password" matInput placeholder="Password" name="password" [(ngModel)] = "loginCredentials.password">
                     </mat-form-field>
                   </mat-card-content>
-                  <div class="login-spinner" fxLayout="row" fxLayoutGap="20px">
+                 <!--  <div class="login-spinner" fxLayout="row" fxLayoutGap="20px">
                     <mat-spinner [diameter] = "36" [strokeWidth] = "4" *ngIf="showSpinner"></mat-spinner>
-                  </div>
+                  </div> -->
                   <div fxLayout="row">
                     <a [routerLink]="['../forgotPassword']" class="forgot-password">forgot password?</a>
                   </div>
