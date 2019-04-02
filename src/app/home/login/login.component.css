@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CTitillium+Web:400,700");
+
+@media (max-width: 767px) {
+  .login-main {
+    padding: 15px;
+  }
+}
+
+.login-main .login-logo {
+  padding-top: 20px;
+  display: inline;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px !important;
+}
+
+.login-main .left-block {
+  display: table !important;
+  vertical-align: middle;
+  padding: 20px 40px;
+  width: 400px;
+  height: 500px;
+  /*background-image: url('../../assets/images/backgrounds/kinderBackground.png');*/
+  background-image: linear-gradient(238deg, #55c3d4, #099ad5);
+  max-height: initial !important;
+}
+
+@media (max-width: 991px) {
+  .login-main .left-block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-main .left-block {
+    width: 100%;
+    height: auto;
+    display: none !important;
+  }
+}
+
+.login-main .left-block > div {
+  display: table-cell !important;
+  vertical-align: middle;
+}
+
+.login-main .left-block .title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .login-main .left-block .title {
+    text-align: center;
+    display: block !important;
+  }
+}
+
+.login-main .greeting {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #fefefe;
+}
+
+@media (max-width: 767px) {
+  .login-main .greeting {
+    text-align: center;
+  }
+}
+
+.login-main .greeting a {
+  color: #5ac4d3;
+}
+
+.login-main .right-block {
+  display: table !important;
+  vertical-align: middle;
+  padding: 20px 60px;
+  width: 400px;
+  height: 500px;
+  background-color: #ffffff;
+  max-height: initial !important;
+}
+
+@media (max-width: 991px) {
+  .login-main .right-block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-main .right-block {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+}
+
+.login-main .right-block > div {
+  display: table-cell !important;
+  vertical-align: middle;
+}
+
+.login-main .right-block .title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #2a4362;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .login-main .right-block .title {
+    font-size: 22px;
+    line-break: 26px;
+  }
+}
+
+.login-main .login-container {
+  width: 100%;
+  min-width: 100%;
+}
+
+.login-main .blue-button {
+  cursor: pointer;
+  width: 200px;
+  height: 36px;
+  border-radius: 18.5px;
+  background-image: linear-gradient(265deg, #55c3d4, #099ad5);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  text-transform: uppercase;
+  margin: 10px auto 0;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-main .blue-button:hover {
+  color: #6ad0e0;
+  border-color: #6ad0e0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .aline-mob {
+    display: block !important;
+  }
+}
+
+.forgot-password {
+  font-size: 13px;
+}

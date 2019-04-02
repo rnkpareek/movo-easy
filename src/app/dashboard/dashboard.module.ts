@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { DashboardRoutingModule } from './dashboard-routing.module';
-import { VendorDashboardComponent } from './vendor-dashboard/vendor-dashboard.component';
+import { DashboardComponent } from './dashboard.component';
+import {dashRoute} from './dash-routing';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import {NavbarComponent} from './navbar/navbar.component';
+import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   imports: [
     CommonModule,
-    DashboardRoutingModule
+     RouterModule.forChild(dashRoute),
+     FormsModule,
+     SidebarModule.forRoot(),
   ],
-  declarations: [VendorDashboardComponent]
+  declarations: [DashboardComponent,NavbarComponent]
 })
 export class DashboardModule { }

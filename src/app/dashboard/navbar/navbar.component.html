@@ -1,0 +1,102 @@
+
+
+<ng-sidebar-container style="position: fixed;">
+    <!-- A sidebar -->
+  <!-- <ng-sidebar [(opened)]="_opened" mode="over" closeOnClickOutside=false> -->
+  <ng-sidebar [(opened)]="_opened" mode="over" closeOnClickOutside=false>
+     <nav id="sidebar" >
+       <!--  <a class="navbar-brand text-center" href="#"><img src="assets/logo.png" width="230px" height="50px" class="logo" alt="brand logo"></a> -->
+        <ul class="sidenva-left">
+           
+          
+
+             <li *ngIf="rolevalues=='Admin'">
+                <!-- <a routerLink="/app/d1">Researcher</a> -->
+               <a routerLink="/app/admin/home" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></a> 
+                
+            </li>
+            <li *ngIf="rolevalues=='Researcher'">
+                <!-- <a routerLink="/app/d1">Researcher</a> -->
+               <a routerLink="/app/researcher" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></a> 
+                
+            </li>
+             <li *ngIf="rolevalues=='Reviewer'">
+                <!-- <a routerLink="/app/d1">Researcher</a> -->
+               <a routerLink="/app/reviewer" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></a> 
+                
+            </li>
+            
+
+             <li *ngIf="rolevalues=='Admin'">
+                <!-- <a routerLink="/app/d1">Researcher</a> -->
+               <a routerLink="/app/admin/create" routerLinkActive="active"><i class="fa fa-user-circle" aria-hidden="true"></i><small>Create user</small></a> 
+                
+            </li>
+            <li *ngIf="rolevalues=='Admin'">
+                <!-- <a routerLink="/app/d1">Researcher</a> -->
+               <a routerLink="/app/admin/usertable" routerLinkActive="active"><i class="fa fa-address-card" aria-hidden="true"></i><small>Manage user</small></a> 
+                
+            </li>
+           
+           
+            <li *ngIf="rolevalues=='Admin'">
+                <a routerLink="/app/admin/datacreation"><i class="fa fa-table" aria-hidden="true"></i><small>Manage Data</small></a>
+                
+            </li>
+             <li>
+                <a routerLink="/app/admin/setting"><i class="fa fa-cogs" aria-hidden="true"></i><small>Setting</small></a>
+                
+            </li>
+             <li>
+                <a  ><i (click)="logout()" class="fa fa-sign-out" aria-hidden="true"></i><small>Logout</small></a>
+                
+            </li>
+        </ul>
+        </nav>
+  
+  </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+      
+      <nav class="navbar navbar-dark bg-dark">
+         
+          <div class="navbar-header">
+              <button (click)="_toggleSidebar()" class="_toggle"></button>
+            <img src="assets/logo.png" alt="brand logo">
+          </div>
+          <div class="search-block">
+            <form class="navbar-form">
+            <div class="input-group">
+              <input type="text" class="form-control" name="search" id="search" placeholder="Search">
+             <span class="glyphicon glyphicon-search"></span>
+            </div>
+           </form>
+          </div>
+        
+           <div class="nav navbar-nav navbar-right">
+              <div class="media">
+                <div class="media-body text-right mt-3 mr-2 p-0">
+                  <p class="media-heading mb-0 p-0">{{name}}</p>
+                  <small class="mb-0 p-0">{{rolevalues}}</small>
+                </div>
+                <a class="dropdown-toggle" href="javascript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="media-right" >
+                    <img src="assets/img_avatar.png" class="media-object" >
+                    <span class="noti-icon">2</span>
+                  </div>
+                </a>
+                <div class="dropdown-menu text-center">
+                  <button type="button" class="btn btn-primary" (click)="logout()">Logout</button>
+                </div>
+              </div>
+            </div> 
+          </nav> 
+
+          <router-outlet></router-outlet>
+          <div class="footer">
+          
+          </div> 
+    </div>
+
+  </ng-sidebar-container>

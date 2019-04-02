@@ -1,3 +1,48 @@
-<p>
-  login works!
-</p>
+<div class="container">
+<div class="login-main">
+    <div class="login-container" fxLayout="column" fxLayoutGap="20px">
+        <div fxLayout="row" fxLayoutAlign="center" class="login-logo">
+          <img src="" height="140"/>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" class="aline-mob">
+          <div class="left-block" fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column">
+              <div class="title" fxLayout="row">Welcome Back!</div>
+              <div class="greeting">
+                  Sign in to check if you have new enquery.
+              </div>
+            </div>
+             <div class="right-block" fxLayout="row" fxLayoutAlign="center" >
+            <div fxLayout="column">
+              <form (submit)="login()">
+                  <div class="title">Login to your account</div>
+                  <mat-card-content class="input-box-wrapper" fxLayout="column">
+                    <mat-error *ngIf="showError">
+                      Invalid Email/Password
+                    </mat-error>
+                    <mat-form-field class="input-box">
+                      <input matInput placeholder="Email" name="email" [(ngModel)] = "loginCredentials.email">
+                    </mat-form-field>
+                    <mat-form-field class="input-box">
+                      <input type="password" matInput placeholder="Password" name="password" [(ngModel)] = "loginCredentials.password">
+                    </mat-form-field>
+                  </mat-card-content>
+                  <div class="login-spinner" fxLayout="row" fxLayoutGap="20px">
+                    <mat-spinner [diameter] = "36" [strokeWidth] = "4" *ngIf="showSpinner"></mat-spinner>
+                  </div>
+                  <div fxLayout="row">
+                    <a [routerLink]="['../forgotPassword']" class="forgot-password">forgot password?</a>
+                  </div>
+                  <button class="blue-button" type="submit">Login</button>
+                  <!-- <button class="blueButton" (click)="createUserLink(loginCredentials.email)">Create Fire User</button> -->
+              </form>
+
+            </div>
+          </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+</div>
