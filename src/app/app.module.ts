@@ -21,6 +21,10 @@ import { environment } from '../environments/environment.prod';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
 
+// import { CalendarModule, DateAdapter } from 'angular-calendar';
+// import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+// import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
 firebase.initializeApp(environment.firebase);
 
 @NgModule({
@@ -37,7 +41,12 @@ firebase.initializeApp(environment.firebase);
     MatButtonModule,
     MatSelectModule,
     MatIconModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    // CalendarModule.forRoot({
+    //   provide: DateAdapter,
+    //   useFactory: adapterFactory
+    // }),
+    // NgbModalModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

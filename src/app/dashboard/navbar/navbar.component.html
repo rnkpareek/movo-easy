@@ -8,43 +8,26 @@
        <!--  <a class="navbar-brand text-center" href="#"><img src="assets/logo.png" width="230px" height="50px" class="logo" alt="brand logo"></a> -->
         <ul class="sidenva-left">
            
-          
+            <li>
+                <a routerLink="/app/admin/setting"><i class="" aria-hidden="true"></i><small>Home</small></a>
+                
+            </li>
 
-             <li *ngIf="rolevalues=='Admin'">
-                <!-- <a routerLink="/app/d1">Researcher</a> -->
-               <a routerLink="/app/admin/home" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></a> 
-                
-            </li>
-            <li *ngIf="rolevalues=='Researcher'">
-                <!-- <a routerLink="/app/d1">Researcher</a> -->
-               <a routerLink="/app/researcher" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></a> 
-                
-            </li>
-             <li *ngIf="rolevalues=='Reviewer'">
-                <!-- <a routerLink="/app/d1">Researcher</a> -->
-               <a routerLink="/app/reviewer" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></a> 
-                
-            </li>
-            
-
-             <li *ngIf="rolevalues=='Admin'">
-                <!-- <a routerLink="/app/d1">Researcher</a> -->
-               <a routerLink="/app/admin/create" routerLinkActive="active"><i class="fa fa-user-circle" aria-hidden="true"></i><small>Create user</small></a> 
-                
-            </li>
-            <li *ngIf="rolevalues=='Admin'">
-                <!-- <a routerLink="/app/d1">Researcher</a> -->
-               <a routerLink="/app/admin/usertable" routerLinkActive="active"><i class="fa fa-address-card" aria-hidden="true"></i><small>Manage user</small></a> 
-                
-            </li>
-           
-           
-            <li *ngIf="rolevalues=='Admin'">
-                <a routerLink="/app/admin/datacreation"><i class="fa fa-table" aria-hidden="true"></i><small>Manage Data</small></a>
+             <li>
+                <a routerLink="/app/admin/setting"><i class="" aria-hidden="true"></i><small>Notification</small></a>
                 
             </li>
              <li>
-                <a routerLink="/app/admin/setting"><i class="fa fa-cogs" aria-hidden="true"></i><small>Setting</small></a>
+                <a routerLink="/app/admin/setting"><i class="" aria-hidden="true"></i><small>Finance</small></a>
+                
+            </li>
+
+             <li>
+                <a routerLink="setting"><i class="" aria-hidden="true"></i><small>Theme setting</small></a>
+                
+            </li>
+             <li>
+                <a routerLink="/app/dashboard/setting"><i class="" aria-hidden="true"></i><small>Profile Setting</small></a>
                 
             </li>
              <li>
